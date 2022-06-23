@@ -1,0 +1,99 @@
+#filter {
+    margin: 12px 20%;
+    padding: 5px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.filter-part {
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(16, 16, 84);
+    color: white;
+}
+.filter-sec{
+outline: none;
+padding: 5px 7px;
+}
+
+.job {
+    width: 60%;
+    margin: 25px auto;
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    padding: 10px 18px;
+}
+
+#job-profile {
+    color: blue;
+    font-weight: bolder;
+    padding: 4px;
+}
+
+#cmpy_name {
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px 4px;
+}
+
+.sub-div {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.339);
+}
+
+.job-info {
+    font-size: 20.5px;
+    font-weight: lighter;
+    padding: 2px 4px;
+}
+
+.button {
+    color: white;
+    background-color: blue;
+    padding: 4px 16px;
+    border: none;
+}
+
+.user-detail {
+    width: 35%;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    padding: 15px 25px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user-profile-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 255, 0.228);
+    color: blue;
+    font-size: 20px;
+    padding: 5px 12px;
+}
+
+.user-profile-field:focus {
+    border-bottom: 2px solid blue;
+}
+
+.detail-show {
+    position: fixed;
+    top: 55%;
+    right: 5%;
+}
+
+.button-sp {
+    padding: 10%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

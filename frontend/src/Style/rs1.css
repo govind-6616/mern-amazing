@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainn{
+    border: 1px solid black;
+    margin: 7% auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 580px 1fr;
+    grid-template-rows: 165px 80px 200px 200px 250px;
+}
+
+.main>div {
+    /* border: 1px solid black; */
+    padding: 0px 20px;
+}
+
+.flex1 {
+    grid-column: 1/-1;
+    background-color: rgba(33, 87, 116, 0.937);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex1 div h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+.flex1 div p {
+    font-size: 24px;
+    text-decoration: underline;
+    padding: 2px;
+}
+.flex2 {
+    grid-column: 1/-1;
+    border-bottom: 1px solid black;
+}
+.flex2 p {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 8px 50px;
+    color: rgba(33, 87, 116, 0.937);
+    word-spacing: 3px;
+    text-align: center;
+}
+.flex2 div {
+    text-align: right;
+    font-size: 16px;
+    padding-left: 30px;
+}
+.flex3 {
+    grid-column: 1/2;
+    grid-row: 3/6;
+}
+.flex3 div{
+    padding-left: 15px;
+}
+.flex3 div p {
+    font-size: 18px;
+    font-weight: bolder;
+}
+.flex3 div p:nth-child(1) {
+    text-align: right;
+    font-weight: lighter;
+    padding: 2px;
+}
+.flex3 .tasks {
+    font-size: 17px;
+    font-weight: lighter;
+    padding: 4px;
+    letter-spacing: 0.75px;
+}
+.flex4 div ul {
+    padding-left: 40px;
+
+}
+.flex4 ul li {
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 0.75px;
+}
+
+.flex5 div p {
+    padding: 0px 20px;
+    font-size: 17px;
+}
+.flex6 div ul {
+    padding-left: 20px;
+}
+
+.flex6 div ul li {
+    font-size: 16.8px;
+    font-weight: lighter;
+}

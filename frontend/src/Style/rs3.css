@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main2 {
+    border: 1px solid black;
+    margin: 7% auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 430px 1fr;
+    grid-template-rows: 380px 170px 320px 160px;
+}
+
+.main2>div {
+    /* border: 1px solid blue; */
+    padding: 14px;
+}
+.flex32{
+grid-row: 1/3;
+grid-column: 2/3;
+background-color: whitesmoke;
+
+}
+.flex35{
+    grid-row: 3/5;
+    grid-column: 2/3;
+  background-color: whitesmoke;
+}
+.flex31,.flex33,.flex34,.flex36{
+    background-color: rgb(4, 4, 45);
+}
+.flex31 h2{
+    padding: 20px 0px 0px 20px;
+color: white;
+font-weight: 700;
+font-size: 42px;
+}
+.flex31{
+    border-bottom: 1px solid white;
+}
+.flex31 h4{
+    color: white;
+    padding: 0px 0px 20px 20px;
+    font-weight: 300;
+    font-size: 24px;
+}
+.flex31 p{
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+.contact div p{
+    color: white;
+
+}
+.flex35 ul li{
+color: gray;
+font-size: 19px;
+word-spacing: 2px;
+}
+.flex36 div{
+display: flex;
+justify-content: space-between;
+}
+.edu{
+    color: white;
+    font-size: 18px;
+}
