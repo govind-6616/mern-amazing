@@ -14,7 +14,7 @@ const UserRegister = () => {
     }
     const register = async (data) => {
         try {
-            const res = await axios.post("http://localhost:8000/register", data);
+            const res = await axios.post("/register", data);
             if (res.status === 200) {
                 alert("User Register Successful");
             }

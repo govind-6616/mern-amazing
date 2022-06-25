@@ -45,7 +45,7 @@ const Posts = () => {
 
     const userProfile = async () => {
         try {
-            const res = await axios.get(`/${company_name}/${srch._id}`);
+            const res = await axios.get(`/jobposts/${company_name}/${srch._id}`);
             if (res.status === 200) {
                 userDetail(res.data);
                 if (res.data.post1!= "") {

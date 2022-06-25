@@ -14,7 +14,7 @@ const CompanyRegister = () => {
     }
     const register = async (data) => {
         try {
-            const res = await axios.post("http://localhost:8000/companyregister", data);
+            const res = await axios.post("/companyregister", data);
             if (res.status === 200) {
                 alert("Company Register Successful");
             }

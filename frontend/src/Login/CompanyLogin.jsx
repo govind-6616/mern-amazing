@@ -17,7 +17,7 @@ const CompanyLogin=()=>{
     }
     const Login = async (data) => {
         try {
-            const res = await axios.post("http://localhost:8000/companylogin", data);
+            const res = await axios.post("/companylogin", data);
             console.log(res.data.companyLogin);
             if (res.status == 200) {
                 if (res.data.companyLogin) {

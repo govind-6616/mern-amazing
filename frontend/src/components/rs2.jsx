@@ -18,7 +18,6 @@ const Res2 = (props) => {
                     <div>
                         <p>{props.value.mobile}</p>
                         <p>{props.value.email}</p>
-                        <p>{props.value.email}</p>
                         <p>{props.value.city}</p>
                     </div>
                 </div>

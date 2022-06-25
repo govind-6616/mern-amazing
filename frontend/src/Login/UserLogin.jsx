@@ -17,7 +17,7 @@ const UserLogin=()=>{
     }
     const Login = async (data) => {
         try {
-            const res = await axios.post("http://localhost:8000/login", data);
+            const res = await axios.post("/login", data);
             console.log(res.data.userLogin);
             console.log(res);
             if (res.status == 200) {
