@@ -6,6 +6,10 @@ import "./Style/job.css";
 const Apply = () => {
 
     useEffect(() => {
+        const token=localStorage.getItem('token');
+        if(!token){
+            alert("Login to Apply");
+        }
         checkApply();
         getData();
     }, []);

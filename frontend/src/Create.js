@@ -10,7 +10,6 @@ if(!token){
     navigate('/login');
 }
     },[]);
-    const [read, setRead] = useState(true);
     const [able, setAble] = useState(false);
     const [data, setData] = useState({
         objective: "The Knowledge that I have acquired through academic and non-academic exposure wants to be used in best possible way for the organisation", degree: "", course: "",year:"", university: "", start_time1: "", end_time1: "", post1: "", company_name1: "", location1: "", task1: "", start_time2: "", end_time2: "", post2: "", company_name2: "", location2: "", task2: "",
@@ -61,18 +60,18 @@ singleData(_id);
         }
 
     }
-    const handleRadio = (e) => {
-        if (e.target.value === "c") {
-            setRead(false);
-        }
-        else {
-            setRead(true);
-        }
-    }
+    // const handleRadio = (e) => {
+    //     if (e.target.value === "c") {
+    //         setRead(false);
+    //     }
+    //     else {
+    //         setRead(true);
+    //     }
+    // }
     const handleRadioExp = (e) => {
         if (e.target.value === "disabled") {
             setAble(true);
-            setData({ objective: "", degree: "", course: "",year:"", university: "", start_time1: "", end_time1: "", post1: "", company_name1: "", location1: "", task1: "", interest1: "", interest2: "", interest3: "", interest4: "", skill1: "", skill2: "", skill3: "", skill4: "", skill5: "", range1: "", range2: "", range3: "", range4: "", range5: "" })
+            setData({});
         }
         else if (e.target.value === "clear") {
             setAble(false);
@@ -83,21 +82,27 @@ singleData(_id);
             setData({ ...data });
         }
     }
+
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+    }
+
     return (
         <>
-             <form>
+             <form onSubmit={handleSubmit}>
                 <div className="container">
                     <h3>Objective</h3>
-                    <div className="form-check form-check-inline">
+                    {/* <div className="form-check form-check-inline">
                         <input className="form-check-input" type="radio" value="d" onChange={handleRadio} name="Radio" id="Radio1" />
                         <label className="form-check-label" for="Radio1" checked>Default</label>
                     </div>
                     <div className="form-check form-check-inline">
                         <input className="form-check-input" type="radio" value="c" onChange={handleRadio} name="Radio" id="Radio2" />
                         <label className="form-check-label" for="Radio2">Customize</label>
-                    </div>
+                    </div> */}
+                    <br/>
                     <div className="mb-3">
-                        <textarea className="form-control" name="objective" rows="3" placeholder="Write Objective in (35-40 words)" onChange={handleInput} value={data.objective} readOnly={read}>
+                        <textarea className="form-control" name="objective" rows="3" placeholder="Write Objective in (35-40 words)" onChange={handleInput} value={data.objective}>
                         </textarea>
                     </div>
                     <h3>Education</h3>
@@ -247,7 +252,7 @@ singleData(_id);
                         </div>
                     </div>
                     <button className="btn btn-primary" onClick={()=>{SetData(data)}}>Save Data</button>
-                    <Link to={`/select`}><button className="btn btn-primary">Next</button></Link>
+                    <Link to={`/select`}><button className="btn btn-primary" style={{margin:"36px"}}>Next</button></Link>
                 </div>
             </form>
         </>
